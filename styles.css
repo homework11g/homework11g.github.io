@@ -110,10 +110,3 @@ button:hover {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
 }
-
-#joke, #quote {
-    margin-top: 30px;
-    font-size: 1.2em;
-    color: #4CAF50;
-    animation: fadeIn 2s ease-in-out;
-}
