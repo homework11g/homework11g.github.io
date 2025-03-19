@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравление для Люды! 🎉</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем CSS -->
+</head>
+<body>
+    <h1>Дорогая Люда! 🎉</h1>
+    <p>Сердечно поздравляем тебя с этим замечательным праздником! 🎂🎁</p>
+    <p>Пусть каждый день приносит радость, здоровье будет крепким, а в доме всегда царят тепло и уют! 🏡💖</p>
+
+    <div class="buttons">
+        <button onclick="showMessage()">Нажми для сюрприза! 🎁</button>
+        <button onclick="changeBackground()">Смени фон! 🌈</button>
+        <button onclick="showEmojis()">Покажи смайлики! 😊</button>
+        <button onclick="playMusic()">Включи музыку! 🎵</button>
+        <button onclick="startConfetti()">Запусти конфетти! 🎊</button>
+        <button onclick="startGame()">Играть в игру! 🎮</button>
+        <button onclick="showJoke()">Расскажи анекдот! 😂</button>
+        <button onclick="showQuote()">Покажи цитату! 📜</button>
+    </div>
+
+    <p id="surpriseMessage" class="hidden message">
+        Спасибо, что ты у нас есть! 💖<br>
+        Ты самая лучшая! 🌟😊🎈<br>
+        Мы тебя очень любим! ❤️🥳🎉
+    </p>
+
+    <div id="emojiContainer" class="hidden">
+        <div class="emoji">🎉🎂🎁💖🌟😊🎈❤️🥳</div>
+    </div>
+
+    <div id="confetti" class="hidden"></div>
+
+    <div id="game" class="hidden">
+        <h2>Поймай смайлик! 🎮</h2>
+        <p>Нажми на смайлик, чтобы заработать очки!</p>
+        <p>Очки: <span id="score">0</span></p>
+        <div id="target">😊</div>
+    </div>
+
+    <div id="joke" class="hidden">
+        <h2>Анекдот 😂</h2>
+        <p id="jokeText"></p>
+    </div>
+
+    <div id="quote" class="hidden">
+        <h2>Цитата дня 📜</h2>
+        <p id="quoteText"></p>
+    </div>
+
+    <audio id="music" src="celebration.mp3"></audio> <!-- Добавляем музыку -->
+
+    <script src="script.js"></script> <!-- Подключаем JavaScript -->
+</body>
+</html>
